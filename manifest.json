@@ -1,13 +1,21 @@
 {
-    "name":"Metro Theme Changer",
-    "description":"Change any website to dark or light mode with easy",
-    "version":"0.0.1",
-    "author":"Syntax Designer",
-    "default_pop": "src/index.html",
-    "content_scripts":[{
-        "matches":["<all_urls>"],
-        "js":["src/content.js"],
-        "run_at":"document_end"
-}],
-"document_title":"Metro Theme"
+    "name": "Metro Theme Changer",
+    "description": "Change any website to dark or light mode with easy",
+    "version": "0.0.1",
+    "author": "Syntax Designer",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "src/content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup":"./src/index.html",
+        "default_title": "Metro Theme"
+    },
+    "manifest_version": 3
 }
