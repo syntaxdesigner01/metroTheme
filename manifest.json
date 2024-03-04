@@ -3,6 +3,7 @@
     "description": "Change any website to dark or light mode with easy",
     "version": "0.0.1",
     "author": "Syntax Designer",
+    "permissions":["tabs","storage","scripting"],
     "content_scripts": [
         {
             "matches": [
@@ -12,8 +13,7 @@
                 "src/content.js"
             ],
             "css": ["src/style.css"],
-            
-            "run_at": "document_start"
+            "run_at":"document_end"
         }
     ],
     "action": {
